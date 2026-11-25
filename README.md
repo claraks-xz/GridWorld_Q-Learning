@@ -1,4 +1,4 @@
-# GridWorld Q-Learning — Demo Interativo para Apresentação Acadêmica
+# GridWorld Q-Learning — Demo Interativo
 
 > Demonstração ao vivo da disciplina de **Inteligência Artificial Aplicada (IIA)**.  
 > Interface 100% Tkinter — **sem dependências externas além de `numpy`**.
