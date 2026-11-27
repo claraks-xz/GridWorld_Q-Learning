@@ -95,36 +95,6 @@ Q(s, a) ← Q(s, a) + α × [ r + γ × max_a' Q(s', a') − Q(s, a) ]
 
 ---
 
-## 💡 Roteiro de Demonstração (20 min)
-
-### 1 — Apresentação do ambiente (~3 min)
-- Mostre o mapa: onde é o início (azul), objetivo (verde 🏆), armadilhas (vermelho 💀) e paredes (cinza).
-- Explique as 4 ações e as recompensas.
-
-### 2 — Treinamento acelerado (~4 min)
-- Pressione `↑` duas vezes para **modo Turbo (100×)**.
-- Observe o epsilon caindo e a taxa de sucesso subindo no painel.
-- Aguarde ~500 episódios e pressione `↓` para voltar a 1×.
-
-### 3 — Visualizar a política aprendida (~4 min)
-- Pressione `V` para ativar **Política (setas)**.
-- Mostre como as setas formam um caminho coerente do início ao objetivo, desviando de armadilhas.
-- Pressione `V` novamente para o **Mapa de calor** e explique os valores Q por célula.
-
-### 4 — Demonstração ao vivo de adaptação (~5 min)
-- Pressione `Espaço` para pausar.
-- Pressione `E` para ativar o modo edição.
-- **Clique em células** para adicionar uma parede bloqueando o caminho aprendido.
-- Pressione `R` para resetar e observe o agente reaprendendo um novo caminho.
-- Converta algumas paredes em armadilhas com `T` para mostrar penalidades.
-
-### 5 — Discussão técnica (~4 min)
-- Mostre o código de [`agent.py`](agent.py) (linha da atualização Q).
-- Explique epsilon-greedy e o trade-off exploração × exploração.
-- Comente sobre estocásticidade (`STOCHASTIC = True` em [`config.py`](config.py)).
-
----
-
 ## 🔬 Extensões Fáceis
 
 | O que fazer | Onde mudar |
